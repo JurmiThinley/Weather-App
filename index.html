@@ -2,34 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather App</title>
     <link rel="stylesheet" href="styles.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <div class="container">
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Enter city name..." required />
+            <button type="submit">Search</button>
+        </form>
+
         <div class="weather-card">
-            <img src="" alt="" id="weather-icon">
-            <div id="location">Unable to Fetch Weather</div>
-            <div class="desc">No Information Available</div>
-            <div class="weather">
-                <div class="c">Error</div>
-                <div class="circle"></div>
-                <div class="f">Error</div>
+            <div class="weather-header">
+                <img src="" alt="Weather Icon" id="weather-icon" />
+                <h2 id="location">Unable to Fetch Weather</h2>
+                <p class="desc">No Information Available</p>
+            </div>
+            <div class="temperature">
+                <span class="c">Error °C</span>
+                <span class="divider">|</span>
+                <span class="f">Error °F</span>
             </div>
             <div class="info">
-                <h4>Sunrise: <span class="sunrise">No Information Available</span></h4>
-                <h4>Sunset: <span class="sunset">No Information Available</span></h4>
+                <div>
+                    <h4>Sunrise</h4>
+                    <p class="sunrise">No Information Available</p>
+                </div>
+                <div>
+                    <h4>Sunset</h4>
+                    <p class="sunset">No Information Available</p>
+                </div>
             </div>
         </div>
     </div>
     <script src="scripts.js"></script>
 </body>
+
 
 </html>
