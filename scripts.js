@@ -1,4 +1,4 @@
-"const API = 'https://api.openweathermap.org/data/2.5/weather';"
+
 const apiKey = '304d150d2514ec32060a7f0c10807675';
 const weatherIcon = document.getElementById("weather-icon");
 const locationElement = document.getElementById("location");
