@@ -1,3 +1,4 @@
+"const API = 'https://api.openweathermap.org/data/2.5/weather';"
 const apiKey = '304d150d2514ec32060a7f0c10807675';
 const weatherIcon = document.getElementById("weather-icon");
 const locationElement = document.getElementById("location");
@@ -10,7 +11,7 @@ const searchForm = document.getElementById("search-form");
 const cityInput = document.getElementById("city-input");
 
 // Fetch weather by coordinates
-function fetchWeatherByCoords(lat, lon) {
+function fetchWeatherByCoords(city, lat, lon) {
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
     fetchWeather(url);
 }
